@@ -47,7 +47,7 @@ function SignUpPage() {
         }
 
         try {
-            const response = await fetch("http://localhost:3820/signupDetails", {
+            const response = await fetch("https://currentbackend.vercel.app/signupDetails", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

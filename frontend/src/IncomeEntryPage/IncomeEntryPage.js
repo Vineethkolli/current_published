@@ -30,7 +30,7 @@ function IncomeEntryPage() {
         console.log(incomeData);
         
         try {
-            const response = await fetch("http://localhost:3820/incomeEntry", {
+            const response = await fetch("https://currentbackend.vercel.app/incomeEntry", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

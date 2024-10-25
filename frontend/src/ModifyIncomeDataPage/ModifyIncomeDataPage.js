@@ -15,7 +15,7 @@ function ModifyIncomeDataPage() {
         }
 
         try {
-            const response = await fetch(`http://localhost:3820/incomeData/${name}`);
+            const response = await fetch(`https://currentbackend.vercel.app/incomeData/${name}`);
             const data = await response.json();
             if (data) {
                 setIncomeData(data);
@@ -40,7 +40,7 @@ function ModifyIncomeDataPage() {
         if (!incomeData) return;
 
         try {
-            const response = await fetch(`http://localhost:3820/updateIncomeData`, {
+            const response = await fetch(`https://currentbackend.vercel.app/updateIncomeData`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -62,7 +62,7 @@ function ModifyIncomeDataPage() {
 
     const handleDelete = async () => {
         try {
-            const response = await fetch(`http://localhost:3820/deleteIncomeData/${incomeData._id}`, {
+            const response = await fetch(`https://currentbackend.vercel.app/deleteIncomeData/${incomeData._id}`, {
                 method: "DELETE",
             });
             if (response.ok) {
