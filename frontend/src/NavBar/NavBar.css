@@ -1,0 +1,49 @@
+.navbar {
+    position: relative;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #ffffff;
+    padding: 10px;
+  }
+  

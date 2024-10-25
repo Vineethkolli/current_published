@@ -1,0 +1,48 @@
+.income-entry-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.income-entry-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.income-entry-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.income-entry-container select, 
+.income-entry-container input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.income-entry-container button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.income-entry-container button:hover {
+    background-color: #0056b3;
+}
+
+.income-entry-container p {
+    font-size: 0.9rem;
+    color: red;
+}
