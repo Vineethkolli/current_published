@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use(cors({
-    origin: ["https://currentfrontend.vercel.app"], // Replace with your actual frontend URL
+    origin: ["https://nbkyouth.vercel.app"], // Replace with your actual frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials:true
 }));
